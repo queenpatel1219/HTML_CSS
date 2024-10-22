@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+
+        }
+        .prt{
+            background-color: black;
+            color: aliceblue;
+            padding-top:12%;
+            text-align: end;
+            padding-right: 2%;
+            position: relative;
+
+        }
+        .prt h2{
+            color: rgb(151, 33, 33);
+            font-size: 20px;
+        }
+        .prt2{
+            background: url(../IMAGE/putimage1.png);
+            width: 50%;
+        }
+        .fa-television{
+            position: absolute;
+            top: 230px;
+            /* left: 10px; */
+            margin-left: 7px;
+            background-color: aliceblue;
+            color: brown;
+            padding: 10px; 
+            border-radius: 20px;
+        }
+        .fa-camera{
+            position: absolute;
+            top: 420px;
+            /* left: 10px; */
+            margin-left: 7px;
+            background-color: aliceblue;
+            color: brown;
+            padding: 10px; 
+            border-radius: 20px;
+        }
+        .fa-tasks{
+            position: absolute;
+            top: 330px;
+            /* left: 10px; */
+            margin-left: 7px;
+            background-color: aliceblue;
+            color: brown;
+            padding: 10px; 
+            border-radius: 20px;
+        }
+        p{
+            width: 98%;
+            padding: 0px 20px ;
+        }
+        h2{
+            width: 95%;
+        }
+        h1{
+            padding: 0 15px;
+            border-right: 7px solid red;
+            margin-right: 32px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="prt">
+            <h1>Our Services</h1>
+            <br>
+            <h2>Web Design </h2><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores tempore officiis sed, delectus neque?</p>
+            <i  class="fa fa-television" aria-hidden="true"></i>
+           <br> 
+            <h2>Web Design</h2><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores tempore officiis sed, delectus neque?</p>
+            <i class="fa fa-camera" aria-hidden="true"></i>
+            <br>
+            <h2>Web Design</h2><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores tempore officiis sed, delectus neque?</p>
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+        </div>
+        
+        <div class="prt2"></div>
+    </div>
+</body>
+</html>

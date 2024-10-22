@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color:rgb(19, 16, 180);
+            animation: first 2s infinite;
+
+        }
+        @keyframes first {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1. What are the benefits of using CSS?</h3>
+    <p>--> CSS is used to define styles for your web pages, including the design, layout
+        and variations in display for different devices and screen sizes.</p>
+    <p>--> Using CSS, you can control the color of the text, the style of fonts, the
+        spacing between paragraphs, how columns are sized and laid out, etc. </p><br>
+
+    <h3>2. What are the disadvantages of CSS?</h3>
+    <p>--> Extra Work for Developers.</p>
+    <p>--> some older browsers may not support all of the latest CSS features, which
+        can limit the design options available to developers</p> <br>
+
+    <h3>3. What is the difference between CSS2 and CSS3?</h3>
+    <p>--> CSS2 and CSS3 are both versions of the Cascading Style Sheets (CSS)
+        language used for styling and formatting web pages. The main difference
+        between the two is that CSS3 includes many new features and
+        improvements that were not available in CSS2.</p>
+    <p>--> CSS3 introduced new selectors, such as attribute selectors and pseudoelements, which allow for more precise
+        targeting of specific elements on a
+        page.</p>
+    <p>-->Another major improvement in CSS3 is the introduction of media queries,
+        which allow developers to create responsive designs that adapt to different
+        screen sizes and devices.</p> <br>
+
+    <h3>4. Name a few CSS style components?</h3>
+    <p>--> selectors, declaration, inheritance</p> <br>
+
+    <h3>5. What do you understand by CSS opacity?</h3>
+    <p>--> css opacity is a property that allows you to adjust the transparency of an
+        element on a web page. It is a value between 0 and 1, where 0 is completely
+        transparent (invisible) and 1 is completely opaque (not transparent). </p><br>
+
+    <h3>6. How can the background color of an element be changed?</h3>
+    <p>--> The background color of an element can be changed using CSS.
+      
+    </p> <br>
+    <h3>7. How can image repetition of the backup be controlled?</h3>
+    <p>--> The background-repeat property in CSS is used to repeat the background
+        image both horizontally and vertically. It also decides whether the
+        background image will be repeated or not.</p><br>
+
+    <h3>8. What is the use of the background-position property?</h3>
+    <p>--> The background-position property takes two values: the horizontal position
+        and the vertical position. These values can be specified in different units, such
+        as pixels, percentages, or keywords like "top", "bottom", "left", and "right". </p>
+    <p>--> The background-position property in CSS is mainly used to sets the initial
+        position for the background image</p><br>
+
+    <h3>9. Which property controls the image scroll in the background?</h3>
+    <p>➢ The "background-attachment" property can take two values: "scroll" and "fixed".
+        body {
+        background-image: url('image.jpg');
+        background-attachment: fixed; }
+    </p><br>
+
+    <h3>10.Why should background and color be used as separate
+        properties?</h3>
+    <p>--> Background and color are separate properties because they can be used
+        foe different purposes.</p>
+    <p>--> the background property is used to set the background color or image of an
+        element, while the color property is used to set the text color of the element</p><br>
+
+    <h3> 11.How to center block elements using CSS1?</h3>
+    <p>--> block-element {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        }
+    </p>
+    <h3>12.How to maintain the CSS specifications?</h3>
+    <p></p><br>
+
+    <h3>13.What are the ways to integrate CSS as a web page?</h3>
+    <p>--> Three ways to integrate css as a web page
+        – Inline css
+        – Internal css
+        – External css</p><br>
+    <h3>14.What are embedded style sheets?</h3>
+    <p>-->An embedded style sheet is declared within the
+
+        <head> element of an XHTML
+            document. It applies to the whole document, rather than just one element. Each
+            style declaration (or CSS rule) gets applied to everything in the document that
+            matches that rule.
+    </p><br>
+    <h3> 15.What are the external style sheets? </h3>
+    <p>--> An external style sheet is a separate CSS file that can be accessed by creating
+        a link within the head section of the webpage. Multiple WebPages can use the
+        same link to access the style sheet. The link to an external style sheet is placed
+        within the head section of the page.
+    </p><br>
+    <h3>
+        16.What are the advantages and disadvantages of using external
+        style sheets?</h3>
+        <h4>Advantages:</h4>
+    <p>--> With the help of External Style Sheets, the styles of numerous documents
+        can be organized from one single file.</p>
+    <p>--> In External Style Sheets, Classes can be made for use on numerous HTML
+        element types in many forms of the site.</p>
+    <p>--> In complex contexts, Methods like selector and grouping can be
+        implemented to apply styles.</p>
+        <h4> Disadvantages:</h4>
+        <p>--> An extra download is essential to import style information for each file.</p>
+        <p>--> The execution of the file may be deferred till the external style sheet is 
+            loaded.</p><br>
+
+        <h3>17.What is the meaning of the CSS selector?</h3>
+        <p>--> A CSS selector is the first part of a CSS Rule. It is a pattern of elements and 
+            other terms that tell the browser which HTML elements should be selected to 
+            have the CSS property values inside the rule applied to them.</p><br>
+
+            <h3>18.What are the media types allowed by CSS?</h3>
+            <p>-->All : Used for all media type devices.</p>
+            <p>--> Print : Used for printers.</p>
+            <p>-->Screen : Used for computer screens, tablets, smart-phones etc.</p>
+            <p>-->➢ Speech : Used for screen readers that "reads" the page out layout.</p><br>
+
+            <h3>19.What is the rule set?</h3>
+            <p>-->A CSS rule set contains one or more selectors and one or more declarations. 
+                The selector(s), which in this example is h1 , points to an HTML element. The 
+                declaration(s), which in this example are color: blue and text-align: center style 
+                the element with a property and value.
+                </p>
+</body>
+
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE Gallery</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            width: 100%;
+            background: black;
+        }
+        .container div{
+            border: 1px solid coral;
+        }
+        .main{
+            display: flex;
+            
+        }
+        .img1{
+            height: 200px;
+            grid-column: 1/3;
+            overflow: hidden;
+        }
+        .img-1{
+            background: url(../IMAGE/IMAGE1.jpg);
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            animation: first 3s infinite;
+        }
+        @keyframes first {
+            0%{
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50%{
+                transform: scale(1.3);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 0.5;
+            }
+        }
+        .img2{
+            height: 200px;
+        }
+        .img-2{
+            background: url(../IMAGE/IMAGE2.avif);
+            background-position: center;
+            background-size: cover;
+            animation: second 2s infinite;
+        }
+        @keyframes second {
+            0%{
+                height: 0%;
+                opacity: 0;
+            }
+            50%{
+                height: 100%;
+                opacity: 1;
+            }
+            100%{
+                height: 0%;
+                opacity: 0;
+            }
+        }
+        .img3{
+            
+            height: 200px;
+
+        }
+        .img-3{
+            background: url(../IMAGE/IMAGE4.jpg);
+            background-position: center;
+            background-size: cover;
+            animation: third 2s infinite;
+        }
+        @keyframes third {
+            0%{
+                width: 0%;
+                height: 0%;
+                opacity: 0;
+            }
+            50%{
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+            100%{
+                width: 0%;
+                height: 0%;
+                opacity: 0;
+            }
+        }
+        .img4{
+            height: 200px;
+            grid-column: 2/4;
+            overflow: hidden;
+        }
+        .img-4{
+            background: url(../IMAGE/IMAGE3.jpg);
+            background-position: center;
+            height: 100%;
+            background-size: cover;
+            animation: forth 2s infinite;
+        }
+        @keyframes forth {
+            0%{
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
+        .img5{
+            
+            grid-column: 1/3;
+            height: 200px;
+            position: relative;
+        }
+        .img-5{
+            background: url(../IMAGE/IMAGE5.5.jpg);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            animation: fifth 2s infinite;
+        }
+        @keyframes fifth {
+            0%{
+                width: 0%;
+                height: 0%;
+                opacity: 0;
+            }
+            50%{
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+            100%{
+                width: 0%;
+                height: 0%;
+                opacity: 0;
+            }
+        }
+
+        .img6{
+            height: 200px;
+            overflow: hidden;
+        }
+        .img-6{
+            background: url(../IMAGE/IMAGE6.jpg);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            animation: sixth 2s infinite;
+        }
+        @keyframes sixth {
+            0%{
+                transform: scale(0);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        .text{
+            background: black;
+            color: white;
+            font-size: x-small;
+            
+         }
+         ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <div class="img1 "><div class="img-1"></div></div>
+        <div class="img2 "><div class="img-2"></div></div>
+        <div class="img3 "><div class="img-3"></div></div>
+        <div class="img4 "><div class="img-4"></div></div>
+        <div class="img5 "><div class="img-5"></div></div>
+        <div class="img6 "><div class="img-6"></div></div>
+    </div>
+    <div class="text">
+        <ul>
+            <h1>SHUTTER</h1>
+            <li>HOME</li>
+            <li>PHOTO</li>
+            <li>BIO</li>
+            <li>BLOG</li>
+            <li>CONTACT</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
